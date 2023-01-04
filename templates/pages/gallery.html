@@ -1,0 +1,81 @@
+{% extends "pages/base.html" %}
+{% load static %}
+{% block title %}
+    About
+{% endblock %}
+{% block body %}
+    <div class="flex-container ps-5 pe-5 p-5" style="background-color: black">
+        <div class="row pt-5">
+            <div class="col d-flex justify-content-lg-center">
+                <h1 id="base-title" style="font-size: 400%">Projects</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <h4 id="base-text" style="font-size: 250%">Collection--a few professional and personal projects I've completed</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row m-5 mb-5" >
+            <div class="col-lg-4">
+                <div id="deli-div"class="project-div" style="background-image: url('{% static 'images/julian_davis_presentation copy lowres.jpg' %}');">
+                    <h1 class="text-center">Delikattesse</h1>
+                    <h4 class="text-center">Product Design</h4>
+                    <a  href="{% url 'delikat' %}"></a>
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id="wavers-div" class="project-div" style="background-image: url('{% static 'images/@whirl_pool_ken lowres.jpg' %}');">
+                    <h1 class="text-center">Top Wavers</h1>
+                    <h4 class="text-center">Graphic Design</h4>
+                    <a  href="{% url 'wavers' %}"></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id="astrology-div" class="project-div" style="background-image: url('{% static 'images/Back t shirt(zoom) lowres.jpg' %}');">
+                    <h1 class="text-center">Astrology Merch</h1>
+                    <h4 class="text-center">Graphic Design</h4>
+                    <a href="{% url 'astro' %}"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-5 mb-5" >
+            <div class="col-lg-4">
+                <div id="cap-div" class="project-div" style="background-image: url('{% static 'images/AdSquare copy lowres.jpg' %}');">
+                    <h1 class="text-center">Graduation Caps</h1>
+                    <h4 class="text-center">Graphic Design</h4>
+                    <a href="{% url 'caps' %}"></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id="art-div" class="project-div" style="background-image: url('{% static 'images/queen.jpg' %}');">
+                    <h1 class="text-center">Artwork</h1>
+                    <h4 class="text-center">Illustration/Art</h4>
+                    <a href="{% url 'art' %}"></a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div id="website-div" class="project-div" style="background-image: url('{% static 'images/redsig lowres.jpg' %}');">
+                    <h1 class="text-center">Making this site</h1>
+                    <h4 class="text-center">UI/UX Design</h4>
+                    <a href="{% url 'site' %}"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#cap-div').click(toLink)
+        $('#wavers-div').click(toLink)
+        $('#deli-div').click(toLink)
+        $('#art-div').click(toLink)
+        $('#astrology-div').click(toLink)
+        $('#website-div').click(toLink)
+        function toLink()
+        {
+            window.location=$(this).find("a").attr("href");
+        }
+    </script>
+{% endblock %}
