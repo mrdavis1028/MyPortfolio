@@ -59,11 +59,9 @@ text-decoration: none}
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 350px;
-    height: 350px;
+    width: 20rem;
+    height: 20rem;
     margin-bottom: 6%;
-    justify-content: center;
-    text-align: center;
 }
 hr {
         position: relative;
