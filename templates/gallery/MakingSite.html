@@ -6,29 +6,32 @@
 {% block body %}
     <div class="flex-container ps-5 pe-5 p-3" style="background-color: black">
         <div class="row pt-5">
-            <div class="col-lg-6 justify-content-lg-center">
-                <h1 id="base-title" style="font-size: 400%">Making My Site</h1>
-            </div>
-            <div class="col-lg-6 justify-content-center">
-                <p style="font-size: 150%;">I decided to build my own site form scratch to practice what I have been learning about both user interface design as well as web development and programming. This was a great opportunity for me to showcase my skills, practice, and learn more about these topics.</p>
+            <div class="col justify-content-lg-center">
+                <h1 id="base-title" class="text-center" style="font-size: 400%">Making My Site</h1>
             </div>
         </div>
         <div class="row pt-2" >
-            <div class="col-lg-4">
-                <div class="show-div d-flex justify-content-center align-items-center" style="background-image: url('{% static 'images/sketches.jpg' %}');">
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="show-div" style="background-image: url('{% static 'images/sketches.jpg' %}');">
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="show-div d-flex justify-content-center align-items-center" style="background-image: url('{% static 'images/Screenshot (6).png' %}');">
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="show-div" style="background-image: url('{% static 'images/Screenshot (6).png' %}');">
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="show-div d-flex justify-content-center align-items-center" style="background-image: url('{% static 'images/finalMockups.jpg' %}');">
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div class="show-div" style="background-image: url('{% static 'images/finalMockups.jpg' %}');">
                 </div>
             </div>
         </div>
     </div>
     <div class=" mt-5 container ">
+            <div class="row m-5 p-5 black">
+            <div class="col">
+                <h1>Description</h1>
+                <p class="gallery-item-text">I decided to build my own site form scratch to practice what I have been learning about both user interface design as well as web development and programming. This was a great opportunity for me to showcase my skills, practice, and learn more about these topics.</p>
+            </div>
+        </div>
         <div class="row m-5 p-5 black">
             <div class="col">
                 <h1>Skills Used</h1>
@@ -56,8 +59,8 @@
                 <h4> 3. Make the website pleasurable on both mobile and desktop screens</h4>
                 <p>A common thread among the users I interviewed was that they view most things on their phone nowadays. However they interjected that someone (i.e. an interviewer) may be sitting down at a desktop to view my work. Thus, making an interface that looked nice on both kinds of devices was a great way to cover my bases.</p>
             </div>
-
-            <div class="row m-5 p-5 black">
+        </div>
+          <div class="row m-5 p-5 black">
                 <div class="col">
                     <h1>Outcome(s)</h1>
                     <p class="gallery-item-text">The final outcome of my website is what you have been looking at this whole time. I took the insights from my interviewees, distilled them into usable guidelines for my interface design, mocked it up in figma, and executed it fully using code. The first picture includes my initial sketches. The second includes the higher-fidelity mockups I made in Figma, after consulting my peers and noting their insights. The last picture showcases a full screenshot of the website you are viewing now, both its mobile and desktop formats.</p>

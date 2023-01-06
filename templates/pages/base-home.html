@@ -20,43 +20,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'css/styles.css'%}">
 </head>
-<nav class="navbar navbar-expand-sm bg-black navbar-dark">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static "images/SignatureRed.png" %}" width="18%"></a>
+    <nav class="navbar navbar-expand-sm bg-black navbar-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static "images/SignatureRed.png" %}" width="18%"></a>
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <button class="navbar-toggler collapsed d-flex d-sm-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon top-bar"></span>
+                        <span class="toggler-icon middle-bar"></span>
+                        <span class="toggler-icon bottom-bar"></span>
+                    </button>
+                </div>
             </div>
-            <div class="col-6 d-flex justify-content-end">
-                <button class="navbar-toggler collapsed d-flex d-sm-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="toggler-icon top-bar"></span>
-                    <span class="toggler-icon middle-bar"></span>
-                    <span class="toggler-icon bottom-bar"></span>
-                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+
+                <div class="navbar-nav ">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
+                    <a class="nav-link active" aria-current="page" href="{% url 'gallery' %}">Projects</a>
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </div>
             </div>
         </div>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-
-            <div class="navbar-nav ">
-                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-                <a class="nav-link active" aria-current="page" href="{% url 'about' %}">About</a>
-                <a class="nav-link active" aria-current="page" href="{% url 'gallery' %}">Projects</a>
-                <a class="nav-link" href="{% url 'contact' %}">Contact</a>
-            </div>
-        </div>
-    </div>
-
-</nav>
+    </nav>
 
 
 <div class="flex-container ps-5 pe-5" style="background-color: black">
     <div class="row d-flex align-items-center">
         <div class="col-lg-6">
-            <h1 style="font-size: 400%" id="base-title">Julian Davis</h1>
-            <h4 style="font-size: 250%">Artist, Illustrator, Designer</h4>
-            <p style="font-size: 150%; color: red;">[Site developed by yours truly...see how below]</p>
+            <h1 style="font-size: 500%" id="base-title">Julian B. Davis</h1>
+            <h4 style="font-size: 300%">Artist, Illustrator, Designer</h4>
+            <p style="font-size: 200%; color: red;">[Site developed by yours truly...see how below]</p>
         </div>
         <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
-            <img src="{% static "images/me.png" %}" style="width: 60%;">
+            <img src="{% static "images/me.png" %}" style="width: 70%;">
         </div>
     </div>
 </div>

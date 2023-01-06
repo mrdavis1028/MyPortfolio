@@ -73,6 +73,8 @@ hr {
 .nav-link
 {
     color: red !important;
+    font-size: 140%;
+    font-family: 'Pathway Gothic One';
 }
 .custom-toggler-color
 {
@@ -188,3 +190,5 @@ h2, h3, h4
 {
     color: red;
 }
+.shift-right
+{margin: 0px auto;}
